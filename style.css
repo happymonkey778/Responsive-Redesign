@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family:'Times New Roman', Times, serif */
+    color: black;
+}
+
+
+.header{
+    padding-top: 10px;
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(#d77607, #c2074b);
+    background-image: linear-gradient(to right, violet, darkred, purple);
+    background-image: linear-gradient(40deg, rgb(207, 11, 11) 30%, orange);
+    text-align: center;
+
+}
+.header h4{
+    padding-top: 5px;
+    font-weight: lighter;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 30%;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative
+}
+
+.nav-links ul li:hover{
+    box-shadow: 0 12px 11px rgba(181, 10, 10, 0.2);
+}
+
+.nav-links ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: bolder;
+}
+.content{
+    display: flex;
+    flex-direction: relative;
+    justify-content: center;
+    align-items: relative;
+}
+
+.individualContent{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.individualContent h3 {
+    text-align: center;
+}
+
+.picAndText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4px;
+}
+
+
+.picAndText img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.picAndText:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.picAndText p{
+    width: 50%;
+    /* font-size: 80%; */
+    text-align: center;
+    margin: auto;
+}
+
+/* .text{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+/* example  */
+/* .socialpic{
+    width: 300px;
+    height: 200px;
+    background-image: url(images/bobCool.jpeg);
+    background-size: cover;
+    background-position: center;
+} */
+
+
+/* for ipad */
+@media (max-width: 800px){
+    .content{
+        flex-direction: column;
+    }
+    .individualContent{
+        width: 100%;
+    }
+    .picAndText{
+        flex-direction: row;
+    }
+    /* .text{
+        padding-left: 30px;
+    } */
+}
+
+@media (max-width: 400px){
+    .content{
+        flex-direction: column;
+    }
+    .individualContent{
+        width: 100%;
+    }
+    .picAndText{
+        flex-direction: column;
+    }
+}
